@@ -1,23 +1,5 @@
 .latestMoviesWrap {
-  .latestMoviesTitleWrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .searchMoviewsInputWrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      input {
-        width: 300px;
-        height: 40px;
-        padding: 2px 10px 5px;
-        border: 1px solid;
-      }
-    }
-  }
   .latestMoviesList {
-    flex-wrap: wrap;
-    justify-content: space-between;
     .singleMovieCard {
       flex-basis: 18%;
     }
@@ -26,6 +8,34 @@
       text-align: center;
       margin: 4rem 0 2rem;
       font-size: 1.2rem;
+    }
+  }
+}
+
+.filterList {
+  padding: 0;
+  list-style: none;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 3rem;
+  li {
+    margin: 1rem 0;
+  }
+  input {
+    margin-right: 0.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .latestMoviesWrap {
+    margin-top: 1rem;
+    .filterList {
+      max-height: none;
+      margin-bottom: 1rem;
+      li {
+        display: inline-block;
+        padding-right: 2rem;
+      }
     }
   }
 }

@@ -16,9 +16,25 @@ export interface MovieType {
   isFavourite?: boolean
 }
 
+export interface GenreType {
+  id: number
+  name: string
+}
+
 export interface TMDBResponseInterface {
   results: MovieType[]
   page: number
   total_pages: number
   total_results: number
+}
+
+export interface TMDBGenreResponseInterface {
+  genres: GenreType[]
+}
+
+export interface MovieParams {
+  page: number
+  genres?: number[]
+  startYear?: string
+  endYear?: string
 }

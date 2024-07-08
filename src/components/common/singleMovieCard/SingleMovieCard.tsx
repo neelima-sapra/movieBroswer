@@ -1,5 +1,5 @@
 import React from "react"
-import { singleSlideItem } from "../../../pages/Home/movieSlideItems"
+import type { singleSlideItem } from "../../../pages/Home/movieSlideItems"
 import starIcon from "../../../images/star-fill.svg"
 import heartIcon from "../../../images/heart.svg"
 
@@ -9,7 +9,7 @@ const SingleMovieCard = (props: singleSlideItem) => {
   return (
     <div className="singleMovieCard mt-4">
       <div className="singleMovieCardImage">
-        <img height={200} width={100} src={props.poster} alt={props.alt} />
+        <img src={props.poster} alt={props.alt} />
       </div>
       <div className="singleMovieCardDetailsRating">
         <img src={starIcon} alt="Rating" />

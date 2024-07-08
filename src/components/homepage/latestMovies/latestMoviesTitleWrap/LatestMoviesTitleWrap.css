@@ -1,0 +1,26 @@
+.latestMoviesTitleWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  .searchMoviewsInputWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      width: 300px;
+      height: 40px;
+      padding: 2px 10px 5px;
+      border: 1px solid;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .latestMoviesWrap {
+    margin-top: 1rem;
+    .latestMoviesTitleWrap {
+      flex-direction: column;
+    }
+  }
+}
